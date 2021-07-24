@@ -26,7 +26,11 @@
               ?>
               <?php } ?>
             </p>
-            <?php the_content(); ?>
+            <?php 
+              the_content(); 
+
+              next_post_link() . ' ' . previous_post_link();
+            ?>
           </div>
 
           <?php if (comments_open()) :?>
